@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@font-face {
+    font-family: NTF-bold;
+    src: url(./fonts/Ntflx-bd.ttf);
+}
+
+/* ---------------------check this code----------------- */
+/* #title_unlimited {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+  } */
+  h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+    /* max-width: 900px; */
+}
+h3{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+  .sign_up{
+    background-image: url("./images/netflix_new.jpg");
+    background-color: transparent;
+  }
+  
+/* ------------------------------------------------------------ */
+@font-face {
+    font-family: NTF_black;
+    src: url(./fonts/Ntflx_blk.ttf);
+}
+
+@font-face {
+    font-family: NTF_medium;
+    src: url(./fonts/Ntflx_md.ttf);
+}
+
+@font-face {
+    font-family: NTF_regular;
+    src: url(./fonts/Ntflx_Rg.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: radial-gradient(100% 55% at center, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(./images/netflix_new.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    .main .hero{
+    min-height: 160vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-position: 52% 70%; */
+    border-bottom: 8px solid #232323;
+    /* background-image: radial-gradient(100% 55% at center, rgba(0,0,0,0) 0%, rgb(0, 0, 0) 100%), url("/Netflix-Clone/assets/images/ntflx_bg_hd.jpg"); */
+
+}
+
+.hero .nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+    font-family: Gilroy;
+}
+
+.nav .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.right img{
+    width: 200px;
+}
+
+.nav .left{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.left .sign:hover{
+    background-color: #c11119;
+    transition: all ease-out 0.3s;
+}
+
+button{
+    cursor: pointer;
+}
+
+.left .lang{
+    height: 32px;
+    width: 120px;
+    border: solid #545454 0.1px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: NTF_regular;
+    font-size: 16px;
+    text-align: center;
+}
+
+.left .drop_down{
+    position: relative;
+}
+
+.drop_down .ri-translate-2{
+    position: absolute;
+    top: 8px;
+    left: 6px;
+}
+
+.left .sign{
+    height: 32px;
+    width: 80px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #e50914;
+    padding: 4px 16px;
+    font-family: NTF_medium;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero .sign_up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.sign_up .title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 130px;
+    padding: 0% 10%;
+}
+/* *{
+    margin: 0vh;
+    padding: 0vh;
+}
+.title{
+    background-image: url(./images/ntflx_bg_hd.jpg);
+    width: 200vh;
+    height: 300vh;
+    position: relative;
+    background-size: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%; */
+    
+/* } */
+
+.title h1{
+    font-size: 48px;
+    font-family: NTF_medium;
+    text-align: center;
+}
+
+.title h3{
+    line-height: 2.5;
+    font-size: 25px;
+    font-family: NTF_regular;
+    font-weight: 10;
+    text-align: center;
+}
+
+.title h4{
+    line-height: 2;
+    font-size: 20px;
+    font-family: NTF_regular;
+    font-weight: 10;
+    text-align: center;
+}
+
+.title .register{
+    display: flex;
+    gap: 30px;
+    padding-top: 3%;
+}
+
+.register .mail{
+    height: 60px;
+    width: 380px;
+    border: 0.5px solid #5e5e5e;
+    border-radius: 5px;
+    background-color: rgba(16, 16, 16, 0.8);
+    padding-left: 15px;
+    color: #fff;
+}
+
+.register button{
+    width: 200px;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 3px;
+    font-family: NTF_medium;
+    font-size: 25px;
+}
+
+i{
+    display: inline-block;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #c11119;
+    transition: all ease-out 0.3s;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: #b8b8b8;
+}
+
+input{
+    font-size: 16px;
+}
+
+
+.main .watch-anywhere{
+    height: 80vh;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    border-bottom: 8px solid #232323;
+}
+
+.watch-anywhere .enjoy{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 12%;
+    
+}
+
+.enjoy h1{
+    font-family: NTF-bold;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.enjoy h2{
+    font-family: NTF_regular;
+    font-weight: 10;
+}
+
+.watch-anywhere .tv{
+    width: 50%;
+    margin-right: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tv img{
+    width: 38vw;
+    position: relative;
+    z-index: 3;
+}
+
+.tv video{
+    width: 29vw;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    z-index: 2;
+}
+
+.main .download{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    border-bottom: 8px solid #232323;
+}
+
+.download .phone{
+    position: relative;
+    margin-left: 11%;
+}
+
+.phone img{
+    width: 38vw;
+}
+
+.phone .download-box{
+    height: 100px;
+    width: 20vw;
+    background-color: #000000;
+    position: absolute;
+    border: 2px solid #5e5e5e;
+    border-radius: 15px;
+    top: 65%;
+    left: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download-box .st_text h3, h4{
+ font-family: NTF_regular;
+}
+
+.st_text h3{
+    font-size: 1.1vw;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.st_text h4{
+    font-size: 0.9vw;
+    color: #0071eb;
+}
+
+.download-box img{
+    width: 4vw;
+}
+
+.download .download-title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 1%;
+    margin-right: 12%;
+}
+
+.download-title h1{
+    font-size: 50px;
+    font-family: NTF-bold;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.download-title h3{
+    font-size: 25px;
+    font-weight: 10;
+    font-family: NTF_regular;
+}
+
+.main .everywhere{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    border-bottom: 8px solid #232323;
+    background-color: #000;
+}
+
+.everywhere .watch-everywhere{
+    width: 50%;
+    margin-left: 12%;
+}
+
+.watch-everywhere h1{
+    font-family: NTF-bold;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.watch-everywhere h3{
+    font-family: NTF_regular;
+    font-size: 25px;
+    font-weight: 10;
+}
+
+.everywhere .apple-mon{
+    width: 50%;
+    margin-right: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.apple-mon img{
+    width: 37vw;
+    position: relative;
+    z-index: 3;
+}
+
+.apple-mon video{
+    width: 24vw;
+    position: absolute;
+    left: 17%;
+    top: 8%;
+    z-index: 2;
+}
+
+.main .kids{
+    height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 8px solid #232323;
+}
+
+.kids .kid-image{
+    width: 50%;
+}
+
+.kids .kid-profile{
+    width: 50%;
+}
+
+.kid-image>img{
+    width: 38vw;
+}
+
+.kids h1{
+    font-family: NTF-bold;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.kids h3{
+    font-family: NTF_regular;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* -------------------------------------------- */
+
+.main .faq{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    border-bottom: 8px solid #232323;
+}
+
+.faq h1{
+    font-family: NTF-bold;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.faq details{
+    background-color: #2d2d2d;
+    margin-bottom: 0.8%;
+    transition: all ease 1s;
+    transition: max-height 400ms ease-out;
+    /* transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s; */
+}
+
+
+details .summary{
+    height: 80px;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: NTF_regular;
+    font-weight: 10;
+    padding: 2%;
+    cursor: pointer;
+}
+
+summary:hover{
+    background-color: #414141;
+    transition: all ease-in-out 0.2s;
+}
+
+.ri-add-line{
+    font-size: 3vw;
+    font-weight: 1;
+}
+
+details p{
+    width: 85vw;
+    background-color: #2d2d2d;
+    font-size: 24px;
+    font-family: NTF_regular;
+    font-weight: 10;
+    border-top: 0.5px solid #000;
+    padding: 2%;
+}
+
+.faq-regs{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-regs h3{
+    text-align: center;
+    font-family: NTF_regular;
+    font-weight: 10;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.faq-regs .register-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.register-2 .mail{
+    height: 60px;
+    width: 380px;
+    border: 0.5px solid #5e5e5e;
+    border-radius: 5px;
+    background-color: rgba(16, 16, 16, 0.8);
+    padding-left: 15px;
+    color: #fff;
+}
+
+.register-2 button{
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 3px;
+    font-family: NTF_medium;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color: #c11119;
+    transition: all ease-out 0.3s;
+}
+
+/* ------------------------------------------------ */
+
+.main footer{
+    margin: 5%;
+    padding: 5% 2%;
+    height: 50%;
+}
+
+footer h4{
+    color: #b3b3b3;
+    font-family: NTF_regular;
+    font-weight: 10;
+    font-size: 17px;
+    margin-bottom: 2%;
+}
+
+a{
+    color: #b3b3b3;
+    font-family: NTF_regular;
+    font-weight: 10;
+    font-size: 15px;
+}
+
+footer .container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.container .section-1{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10% 2% 0%;
+}
+
+.container .col-1{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    /* padding-right: 10%; */
+}
+
+.container .col-2{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    /* padding-right: 30%; */
+}
+
+.container .section-2{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15%;
+}
+
+.container .col-3{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    /* padding-right: 30%; */
+}
+
+.container .col-4{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    /* padding-right: 30%; */
+}
+
+footer .lang{
+    height: 32px;
+    width: 120px;
+    border: solid #545454 0.1px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: transparent;
+    font-family: NTF_regular;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer .drop_down{
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.drop_down .ri-translate-2{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+footer h4{
+    font-family: NTF_regular;
+    font-weight: 10;
+    font-size: 16px;
+}
+
+.drop_down .lang{
+    background-color: #151515;
+}
+.img{z-index: -2;}
